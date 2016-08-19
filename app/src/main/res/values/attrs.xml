@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="authCode" format="string"></attr>
+    <attr name="codeSize" format="dimension"></attr>
+    <attr name="codeColor" format="color"></attr>
+    <attr name="backgroundColor" format="color"/>
+    <declare-styleable name="AuthCodeView">
+        <attr name="codeSize"></attr>
+        <attr name="backgroundColor"/>
+        <attr name="codeColor"></attr>
+        <attr name="authCode"></attr>
+    </declare-styleable>
+</resources>
