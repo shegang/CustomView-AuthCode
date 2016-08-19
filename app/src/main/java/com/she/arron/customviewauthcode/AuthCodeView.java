@@ -103,7 +103,7 @@ public class AuthCodeView extends View {
     }
     @Override
     protected void onDraw(Canvas canvas) {
-//        super.onDraw(canvas);
+        super.onDraw(canvas);
         mPaint.setColor(background);
         mPaint.setAntiAlias(true);
         canvas.drawRect(0, 0, getMeasuredWidth(), getMeasuredHeight(), mPaint);
@@ -115,6 +115,8 @@ public class AuthCodeView extends View {
         canvas.drawLine(0,getWidth() / 2,mBound.width()+getWidth()/2,mBound.height()/2,mPaint);
         mPaint.setColor(Color.BLACK);
         canvas.drawLine(0,0,mBound.width()+getWidth()/2,mBound.height()/2,mPaint);
+        mPaint.setColor(Color.GRAY);
+        canvas.drawLine(0,0,getWidth(),getHeight(),mPaint);
     }
 
     @Override
